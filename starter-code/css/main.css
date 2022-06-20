@@ -1,1 +1,298 @@
-*, :before, :after {box-sizing:border-box;}
+ ██████╗ ███████╗███╗   ██╗███████╗██████╗  █████╗ ██╗     
+██╔════╝ ██╔════╝████╗  ██║██╔════╝██╔══██╗██╔══██╗██║     
+██║  ███╗█████╗  ██╔██╗ ██║█████╗  ██████╔╝███████║██║     
+██║   ██║██╔══╝  ██║╚██╗██║██╔══╝  ██╔══██╗██╔══██║██║     
+╚██████╔╝███████╗██║ ╚████║███████╗██║  ██║██║  ██║███████╗
+ ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+                                                           
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+
+body {
+    font-family: 'Intro';
+    margin: 0;
+}
+
+p {
+    color: gray;
+    font-size:1em;
+    font-weight: 100;
+    margin:0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+███╗   ██╗ █████╗ ██╗   ██╗
+████╗  ██║██╔══██╗██║   ██║
+██╔██╗ ██║███████║██║   ██║
+██║╚██╗██║██╔══██║╚██╗ ██╔╝
+██║ ╚████║██║  ██║ ╚████╔╝ 
+╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝  
+                                                                           
+header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding:2em
+}
+
+#logo {
+    height: 1.7em;
+}
+
+#menucart a img {
+    height: 2em;
+    padding:0 .3em;
+}
+
+#fastSearch {
+    background: linear-gradient(0deg, green 0%, greenyellow 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 3em 1em;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: .05em;
+    margin:0;
+}
+
+form {
+    border-radius: 5px;
+    margin: 2em 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width:90%
+}
+
+form label input {
+    background-repeat: no-repeat;
+    background-position: 1em 0;
+    background-size: contain;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    height: 3em;
+    border: none;
+}
+
+#adress {
+    background-image: url('../images/pin.svg');
+    border-radius: 5px 5px 0 0;
+}
+
+#whatyoulike {
+    background-image: url('../images/bbq.svg');
+    border-top: 1px solid gray;
+    border-radius: 0 0 5px 5px;
+}
+
+#findBtn {
+    background-color: orange;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 1em;
+    margin-right: 50%;
+}
+
+.sectionTitle {
+    text-transform: uppercase;
+    color: orange;
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+}
+
+.tutoImg {
+    padding: 1em;
+    width: 8em;
+    height: 8em;
+}
+
+.description {
+    margin: 0;
+    color: grey;
+}
+
+.tuto {
+    text-transform: uppercase;
+}
+
+#tutorial>div {
+    display: flex;
+    margin: 1em;
+}
+
+#tutorial div div {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+    background-color: rgba(245, 245, 235, 255);
+    padding: 1em;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    margin: 2em 0;
+
+}
+
+.note {
+    border-top: 1px rgba(245, 245, 235, 255) solid;
+}
+
+.buyBtn {
+    background-color: green;
+    color: white;
+    padding: 1em;
+    font-style: italic;
+    border-radius: 10px;
+    border: none;
+}
+
+aside {
+    background-color: red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+aside img {
+    background-color: white;
+    border-radius: 100%;
+    padding: 1em;
+    width: 50%;
+}
+
+aside h2 {
+    text-transform: uppercase;
+}
+
+aside>div {
+    display: flex;
+}
+
+aside div div {
+    padding: 1em
+}
+
+#foodType {
+    background-color: rgba(245, 245, 235, 255);
+    padding: 1em
+}
+
+#foodType div {
+    background-color: white;
+    border-radius: 10px;
+    margin: 1em;
+}
+
+#foodType div h3 {
+    margin: 0;
+}
+
+#foodType div p {
+    padding-bottom: 1em;
+    margin: 0;
+}
+
+#banner {
+    text-transform: uppercase;
+    color: white;
+    padding: 3em 1em;
+    text-align: center;
+    margin: 0;
+}
+
+.banner {
+    margin: 1em;
+    background-color: darkgrey;
+    border-radius: 10px;
+    padding: 3em 1em;
+}
+
+#restaurants {
+    background-color: rgba(245, 245, 235, 255);
+    margin: 0;
+    padding: 1em;
+}
+
+.greenBtn {
+    background-color: green;
+    color: white;
+    padding: 1em 2em;
+    font-style: italic;
+    border-radius: 10px;
+    border: none;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    border-top: 1px solid gray;
+    color: gray;
+}
+
+footer div {
+    padding: 1em
+}
+
+footer div h2 {
+    text-transform: uppercase;
+}
+
+footer div p {
+    color: gray;
+}
+
+address {
+    background-color: rgba(245, 245, 235, 255);
+    padding: 1em;
+    color: gray;
+}
+
+address p a {
+    color: greenyellow;
+}
+
+address p {
+    text-align: center;
+}
+
+address div a {
+    padding: 1em 2em 0 0
+}
