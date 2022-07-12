@@ -5,6 +5,9 @@
   <meta charset="utf-8" />
   <title></title>
   <link rel="stylesheet" href="fonts/Intro/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap">
   <link rel="stylesheet" href="css/main.css">
   </link>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,46 +30,51 @@
     </nav>
 
 
-    <img id="placeholder" src="https://via.placeholder.com/500">
     <div id="fastSearch">
-      <h1 class="uppercase">Order from restaurants around you</h1>
-      <form action="javascript:void 0;">
-        <label class="label">
-          <input id="adress" type="text" name="address" placeholder="Enter your address">
-        </label>
+      <img id="placeholder" class="topPlaceholder" src="https://via.placeholder.com/500">
+      <div id="fastSearchBlock">
+        <h1 class="uppercase">Order from restaurants around you</h1>
+        <form action="javascript:void 0;">
+          <label class="label">
+            <input id="adress" type="text" name="address" placeholder="Enter your address">
+          </label>
 
-        <label class="label">
-          <input id="whatyoulike" type="text" name="foodtype" placeholder="What would you like">
-        </label>
-      </form>
-      <button id="findBtn" type="submit">Find a food</button>
+          <label class="label">
+            <input id="whatyoulike" type="text" name="foodtype" placeholder="What would you like">
+          </label>
+        </form>
+        <button id="findBtn" type="submit">Find a food</button>
+      </div>
     </div>
+
 
   </header>
 
   <section id="tutorial">
     <h1 class="sectionTitle">How it works</h1>
-    <div>
-      <img src="images/map.png" class="tutoImg">
-      <div>
-        <h3 class="tuto">1. Search</h3>
-        <p class="description">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+    <div id="tutorialBlock">
+      <div class="tutorialCard">
+        <img src="images/map.png" class="tutoImg">
+        <div class="tutoCardInfo">
+          <h2 class="tuto">1. Search</h2>
+          <p class="description">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+        </div>
       </div>
-    </div>
-    <div>
-      <img src="images/clipboard.png" class="tutoImg">
-      <div>
-        <h3 class="tuto">2. Order</h3>
-        <p class="description">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis
-          faucibus.</p>
+      <div class="tutorialCard">
+        <img src="images/clipboard.png" class="tutoImg">
+        <div class="tutoCardInfo">
+          <h2 class="tuto">2. Order</h2>
+          <p class="description">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis
+            faucibus.</p>
+        </div>
       </div>
-    </div>
-    <div>
-      <img src="images/bag.png" class="tutoImg">
-      <div>
-        <h3 class="tuto">3. Eat</h3>
-        <p class="description">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis
-          faucibus.</p>
+      <div class="tutorialCard">
+        <img src="images/bag.png" class="tutoImg">
+        <div class="tutoCardInfo">
+          <h2 class="tuto">3. Eat</h2>
+          <p class="description">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis
+            faucibus.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -74,125 +82,123 @@
   <section id="menu">
     <h1 class="sectionTitle">Dishes</h1>
 
-    <div class="container">
-      <img id="placeholder" class="topradius" src="https://via.placeholder.com/500">
-      <h4>Pasta with Lamb Ragù: Coppa, Boston</h4>
-      <p>Christine Quinlan</p>
-      <div class="price">
-        $ 19.95
-        <button class="buyBtn">Buy Now</button>
+    <div class="grid">
+      <div class="container">
+        <img id="placeholder" class="topradius" src="https://via.placeholder.com/500">
+        <h4>Pasta with Lamb Ragù: Coppa, Boston</h4>
+        <p>Christine Quinlan</p>
+        <div class="price">
+          $ 19.95
+          <button class="buyBtn">Buy Now</button>
+        </div>
+
+        <div class="note">
+          <div class="stars">
+            <img src="images/star.svg" class="star">
+            <img src="images/star.svg" class="star">
+            <img src="images/star.svg" class="star">
+            <img src="images/star.svg" class="star">
+            <img src="images/star.svg" class="star">
+          </div>
+          <a class="ratings">1,679 Ratings ></a>
+        </div>
       </div>
 
-      <div class="note">
-        <div class="stars">
-          <img src="images/star.svg" class="star">
-          <img src="images/star.svg" class="star">
-          <img src="images/star.svg" class="star">
-          <img src="images/star.svg" class="star">
-          <img src="images/star.svg" class="star">
+      <div class="container">
+        <img id="placeholder" class="topradius" src="https://via.placeholder.com/500">
+        <h4>Pasta with Lamb Ragù: Coppa, Boston</h4>
+        <p>Christine Quinlan</p>
+        <div class="price">
+          $ 5.99
+          <button class="buyBtn">Buy Now</button>
         </div>
-        <a class="ratings">1,679 Ratings ></a>
+        <div class="note">
+          <div class="stars">
+            <img src="images/star.svg" class="star">
+            <img src="images/star.svg" class="star">
+            <img src="images/star.svg" class="star">
+            <img src="images/star.svg" class="star">
+            <img src="images/star grey.svg" class="star">
+          </div>
+          <a class="ratings">12 Ratings ></a>
+        </div>
       </div>
-    </div>
 
-    <div class="container">
-      <img id="placeholder" class="topradius" src="https://via.placeholder.com/500">
-      <h4>Pasta with Lamb Ragù: Coppa, Boston</h4>
-      <p>Christine Quinlan</p>
-      <div class="price">
-        $ 5.99
-        <button class="buyBtn">Buy Now</button>
-      </div>
-      <div class="note">
-        <div class="stars">
-          <img src="images/star.svg" class="star">
-          <img src="images/star.svg" class="star">
-          <img src="images/star.svg" class="star">
-          <img src="images/star.svg" class="star">
-          <img src="images/star grey.svg" class="star">
+      <div class="container">
+        <img id="placeholder" class="topradius" src="https://via.placeholder.com/500">
+        <h4>Pork Rillette Hand Pies: Olympic Provisions; Portland, OR</h4>
+        <p>Joey Pepperoni's Pizza</p>
+        <div class="price">
+          $ 10.80
+          <button class="buyBtn">Buy Now</button>
         </div>
-        <a class="ratings">12 Ratings ></a>
-      </div>
-    </div>
-
-    <div class="container">
-      <img id="placeholder" class="topradius" src="https://via.placeholder.com/500">
-      <h4>Pork Rillette Hand Pies: Olympic Provisions; Portland, OR</h4>
-      <p>Joey Pepperoni's Pizza</p>
-      <div class="price">
-        $ 10.80
-        <button class="buyBtn">Buy Now</button>
-      </div>
-      <div class="note">
-        <div class="stars">
-          <img src="images/star.svg" class="star">
-          <img src="images/star.svg" class="star">
-          <img src="images/star.svg" class="star">
-          <img src="images/star.svg" class="star">
-          <img src="images/star grey.svg" class="star">
+        <div class="note">
+          <div class="stars">
+            <img src="images/star.svg" class="star">
+            <img src="images/star.svg" class="star">
+            <img src="images/star.svg" class="star">
+            <img src="images/star.svg" class="star">
+            <img src="images/star grey.svg" class="star">
+          </div>
+          <a class="ratings">33 Ratings ></a>
         </div>
-        <a class="ratings">33 Ratings ></a>
       </div>
     </div>
   </section>
 
   <aside>
-    <div>
-      <div class="red">
-        <img src="images/phone.svg">
-        <h2>Easy Online</h2>
-        <p>No need to pick up the phone.Quick and accurate ordering is here.</p>
-      </div>
-
-      <div class="red">
-        <img src="images/chicken.svg">
-        <h2>12 000+ Menus</h2>
-        <p>Discovery new places — order your usual and throw away those paper</p>
-      </div>
+    <div class="red">
+      <img src="images/phone.svg">
+      <h2>Easy Online</h2>
+      <p>No need to pick up the phone.Quick and accurate ordering is here.</p>
     </div>
 
-    <div>
-      <div class="red">
-        <img src="images/percent.svg">
-        <h2>Discounts & Deals</h2>
-        <p>Get exclusive offers and save on your delivery favorites</p>
-      </div>
-
-      <div class="red">
-        <img src="images/mobile.svg">
-        <h2>Anytime, Anywhere</h2>
-        <p>On-the-go? Che out our conveniant apps for iOS and Android</p>
-      </div>
+    <div class="red">
+      <img src="images/chicken.svg">
+      <h2>12 000+ Menus</h2>
+      <p>Discovery new places — order your usual and throw away those paper</p>
     </div>
 
+    <div class="red">
+      <img src="images/percent.svg">
+      <h2>Discounts & Deals</h2>
+      <p>Get exclusive offers and save on your delivery favorites</p>
+    </div>
+
+    <div class="red">
+      <img src="images/mobile.svg">
+      <h2>Anytime, Anywhere</h2>
+      <p>On-the-go? Che out our conveniant apps for iOS and Android</p>
+    </div>
   </aside>
 
   <section id="foodType">
     <h1 class="sectionTitle">Restaurant by Cuisine</h1>
-    <div>
-      <img id="placeholder" class="topradius" src="https://via.placeholder.com/500">
-      <div>
-        <h3>A La Carte</h3>
-        <p>189 dishes</p>
+    <div class="grid">
+      <div class="container foodTypeCard">
+        <img id="placeholder" class="topradius" src="https://via.placeholder.com/500">
+        <div>
+          <h3>A La Carte</h3>
+          <p>189 dishes</p>
+        </div>
+      </div>
+
+      <div class="container foodTypeCard">
+        <img id="placeholder" class="topradius" src="https://via.placeholder.com/500">
+        <div>
+          <h3>Fast Food</h3>
+          <p>3,750 dishes</p>
+        </div>
+      </div>
+
+      <div class="container foodTypeCard">
+        <img id="placeholder" class="topradius" src="https://via.placeholder.com/500">
+        <div>
+          <h3>Italian</h3>
+          <p>708 dishes</p>
+        </div>
       </div>
     </div>
-
-    <div>
-      <img id="placeholder"  class="topradius" src="https://via.placeholder.com/500">
-      <div>
-        <h3>Fast Food</h3>
-        <p>3,750 dishes</p>
-      </div>
-    </div>
-
-    <div>
-      <img id="placeholder" class="topradius" src="https://via.placeholder.com/500">
-      <div>
-        <h3>Italian</h3>
-        <p>708 dishes</p>
-      </div>
-    </div>
-
 
   </section>
 
@@ -206,76 +212,84 @@
 
     <h2 class="sectionTitle">Featured Restaurant</h2>
 
-    <div class="container">
-      <img id="placeholder"  class="topradius" src="https://via.placeholder.com/500">
-      <h3>Acquerello</h3>
-      <p>Italian</p>
-      <div class="btnContainer">
-        <button class="greenBtn">View menu</button>
-        <button class="greenBtn">Buy Now</button>
-      </div>
-      <div class="note">
-        <img src="images/star.svg" class="star">
+    <div class="grid">
+      <div class="container">
+        <img id="placeholder" class="topradius" src="https://via.placeholder.com/500">
+        <h3>Acquerello</h3>
+        <p>Italian</p>
+        <div class="btnContainer">
+          <button class="greenBtn">View menu</button>
+          <button class="greenBtn">Buy Now</button>
+        </div>
+        <div class="note">
+          <img src="images/star.svg" class="star">
           <img src="images/star.svg" class="star">
           <img src="images/star.svg" class="star">
           <img src="images/star.svg" class="star">
           <img src="images/star grey.svg" class="star">
-        <a class="ratings">31 Reviews ></a>
-      </div>
-    </div>
-
-    <div class="container">
-      <img id="placeholder" class="topradius" src="https://via.placeholder.com/500">
-      <h3>Addision at The Grand Del Mar</h3>
-      <p>Contemporary French</p>
-      <div class="btnContainer">
-        <button class="greenBtn">View menu</button>
-        <button class="greenBtn">Buy Now</button>
-      </div>
-      <div class="note">
-        <div class="stars">
-          <img src="images/star.svg" class="star">
-          <img src="images/star.svg" class="star">
-          <img src="images/star.svg" class="star">
-          <img src="images/star.svg" class="star">
-          <img src="images/star.svg" class="star">
+          <a class="ratings">31 Reviews ></a>
         </div>
-        <a class="ratings">419 Reviews ></a>
+      </div>
+
+      <div class="container">
+        <img id="placeholder" class="topradius" src="https://via.placeholder.com/500">
+        <h3>Addision at The Grand Del Mar</h3>
+        <p>Contemporary French</p>
+        <div class="btnContainer">
+          <button class="greenBtn">View menu</button>
+          <button class="greenBtn">Buy Now</button>
+        </div>
+        <div class="note">
+          <div class="stars">
+            <img src="images/star.svg" class="star">
+            <img src="images/star.svg" class="star">
+            <img src="images/star.svg" class="star">
+            <img src="images/star.svg" class="star">
+            <img src="images/star.svg" class="star">
+          </div>
+          <a href="#" class="ratings">419 Reviews ></a>
+        </div>
       </div>
     </div>
-
   </section>
 
   <footer>
-    <div>
-      <h2>Get to know us</h2>
-      <p>About AlaCartee</p>
-      <p>How Our Ordering Works</p>
-      <p>Blog</p>
-      <p>Press</p>
-
-      <h2>Business Solutions</h2>
-      <p>Join Our Restaurant</p>
-      <p>Network</p>
-      <p>Company Accounts</p>
-
-      <h2>Social</h2>
-      <p>Facebook</p>
-      <p>Twitter</p>
-      <p>Pinterest</p>
-
-      <h2>Contact Us</h2>
-      <p>Contact Us</p>
-      <p>Help</p>
-      <p>Suggev</p>
+    <div class="grid">
+      <div>
+        <h2>Get to know us</h2>
+        <p>About AlaCartee</p>
+        <p>How Our Ordering Works</p>
+        <p>Blog</p>
+        <p>Press</p>
+      </div>
+      <div>
+        <h2>Business Solutions</h2>
+        <p>Join Our Restaurant</p>
+        <p>Network</p>
+        <p>Company Accounts</p>
+      </div>
+      <div>
+        <h2>Social</h2>
+        <p>Facebook</p>
+        <p>Twitter</p>
+        <p>Pinterest</p>
+      </div>
+      <div>
+        <h2>Contact Us</h2>
+        <p>Contact Us</p>
+        <p>Help</p>
+        <p>Suggev</p>
+      </div>
     </div>
 
     <address class="copy">
-      <p>© 2014 Yum Yum. With love by <a>HezyTheme</a></p>
       <div>
-        <a>Terms</a>
-        <a>Privacy</a>
-        <a>Contact Us</a>
+        <p>© 2014 Yum Yum. With love by <a href="#">HezyTheme</a></p>
+      </div>
+      <div>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Contact Us</a>
       </div>
     </address>
   </footer>
