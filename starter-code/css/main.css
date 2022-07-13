@@ -98,6 +98,7 @@ nav {
     .grid{
         display:grid;
         grid-template-columns:repeat(4,1fr);
+        gap:1em;
         background-color: none;
     }
     .container{
@@ -240,7 +241,7 @@ form label input {
     margin: 2em 0;
 }
 
-.container h4,
+.container h3,
 .container p {
     padding: 1em;
 }
